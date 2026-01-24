@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ayenadis Temesgen - Software Engineer & Full-Stack Developer specializing in modern web applications with React, JavaScript, and cutting-edge technologies.">
+  <meta name="keywords" content="software engineer, web developer, react, javascript, portfolio, full-stack developer, frontend, backend, web applications">
+  <meta name="author" content="Ayenadis Temesgen">
+  <meta name="robots" content="index, follow">
+  <meta name="language" content="English">
+  <meta name="revisit-after" content="7 days">
+  <meta name="theme-color" content="#2563eb">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://ayenadis.dev/">
+  <meta property="og:title" content="Ayenadis Temesgen | Software Engineer">
+  <meta property="og:description" content="Building innovative web applications with cutting-edge technologies">
+  <meta property="og:image" content="./images/ayenadisT.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://ayenadis.dev/">
+  <meta property="twitter:title" content="Ayenadis Temesgen | Software Engineer">
+  <meta property="twitter:description" content="Building innovative web applications with cutting-edge technologies">
+  <meta property="twitter:image" content="./images/ayenadisT.jpg">
+
+  <title>Ayenadis Temesgen | Software Engineer & Full-Stack Developer</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="./images/logo.jpg">
+  <link rel="apple-touch-icon" href="./images/logo.jpg">
+  
+  <!-- Preload critical resources -->
+  <!-- Font preload removed - using system fonts for better performance -->
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"></noscript>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Skip Navigation -->
+  <a href="#main-content" class="skip-nav">Skip to main content</a>
+  
+  <!-- Theme Toggle -->
+  <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar" role="navigation" aria-label="Main navigation">
+    <div class="nav-container">
+      <div class="nav-brand">
+        <img src="images/logo.jpg" alt="Ayenadis Temesgen" class="nav-logo" loading="lazy">
+        <span class="nav-name">Ayenadis</span>
+      </div>
+      
+      <div class="nav-menu" id="nav-menu">
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="./resume-short.html" class="nav-link resume-btn" target="_blank">
+          <i class="fas fa-download"></i> Resume
+        </a>
+      </div>
+      
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false" role="button" tabindex="0">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </nav>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-content">
+          <div class="hero-text">
+            <p class="hero-greeting">Hello, I'm</p>
+            <h1 class="hero-name">Ayenadis Temesgen</h1>
+            <h2 class="hero-title">
+              Software Engineer & <span class="highlight" id="rotating-text">Full-Stack Developer</span>
+            </h2>
+            <p class="hero-description">
+              I'm a passionate software engineering student specializing in modern web development. 
+              I create responsive, user-friendly applications using cutting-edge technologies like React, JavaScript, and Python. 
+              Currently focused on building innovative solutions and expanding my expertise in full-stack development.
+            </p>
+            
+            <div class="hero-stats">
+              <div class="stat-item">
+                <span class="stat-number" data-target="3">0</span>
+                <span class="stat-label">Projects</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="1">0</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-number" data-target="15">0</span>
+                <span class="stat-label">Technologies</span>
+              </div>
+            </div>
+            
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-primary">View Portfolio</a>
+              <a href="#contact" class="btn btn-secondary">Contact Me</a>
+            </div>
+          </div>
+          
+          <div class="hero-image">
+            <div class="image-container">
+              <img src="images/ayenadisT.jpg" alt="Ayenadis Temesgen - Software Engineer and Full-Stack Developer" class="profile-image" loading="eager">
+              <div class="image-decoration"></div>
+              <div class="image-glow"></div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="scroll-indicator">
+          <div class="scroll-arrow"></div>
+          <span>Scroll to explore</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">About Me</h2>
+          <p class="section-subtitle">Get to know me better</p>
+        </div>
+        
+        <div class="about-content">
+          <div class="about-text">
+            <div class="about-card">
+              <h3>My Journey</h3>
+              <p>
+                I'm a dedicated software engineering student with hands-on experience in web development. 
+                My journey started with curiosity about how websites work, and has evolved into a passion for 
+                creating meaningful digital experiences that solve real-world problems.
+              </p>
+              <p>
+                I specialize in building responsive web applications using modern technologies like React, JavaScript, 
+                and Python. My focus is on writing clean, maintainable code while ensuring excellent user experience 
+                and accessibility across all devices.
+              </p>
+            </div>
+            
+            <div class="about-highlights">
+              <div class="highlight-item">
+                <i class="fas fa-code"></i>
+                <h4>Clean Code</h4>
+                <p>Writing maintainable, scalable code following best practices</p>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-mobile-alt"></i>
+                <h4>Responsive Design</h4>
+                <p>Creating seamless experiences across all devices</p>
+              </div>
+              <div class="highlight-item">
+                <i class="fas fa-universal-access"></i>
+                <h4>Accessibility</h4>
+                <p>Building inclusive applications for everyone</p>
+              </div>
+            </div>
+          </div>
+          
+          <div class="about-info">
+            <div class="info-card">
+              <h3>Quick Facts</h3>
+              <div class="info-list">
+                <div class="info-item">
+                  <span class="info-label">🎓 Education:</span>
+                  <span class="info-value">Software Engineering Student</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">📍 Location:</span>
+                  <span class="info-value">Debre Markos, Ethiopia</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">💼 Focus:</span>
+                  <span class="info-value">Full-Stack Web Development</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">� Special/ties:</span>
+                  <span class="info-value">React, JavaScript, Python</span>
+                </div>
+                <div class="info-item">
+                  <span class="info-label">🚀 Status:</span>
+                  <span class="info-value">Open to Opportunities</span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="availability-status">
+              <div class="status-indicator available"></div>
+              <span>Seeking software engineering opportunities</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Skills & Technologies</h2>
+          <p class="section-subtitle">Technologies and tools I use to build amazing projects</p>
+        </div>
+        
+        <div class="skills-filter" role="tablist" aria-label="Filter skills by category">
+          <button class="filter-btn active" data-filter="all" role="tab" aria-selected="true" aria-controls="skills-grid">All</button>
+          <button class="filter-btn" data-filter="frontend" role="tab" aria-selected="false" aria-controls="skills-grid">Frontend</button>
+          <button class="filter-btn" data-filter="backend" role="tab" aria-selected="false" aria-controls="skills-grid">Backend</button>
+          <button class="filter-btn" data-filter="tools" role="tab" aria-selected="false" aria-controls="skills-grid">Tools</button>
+        </div>
+        
+        <div class="skills-grid" id="skills-grid" role="tabpanel">
+          <!-- Frontend Skills -->
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <i class="fab fa-html5"></i>
+            </div>
+            <h3>HTML5</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="95"></div>
+            </div>
+            <span class="skill-percentage">95%</span>
+          </div>
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <i class="fab fa-css3-alt"></i>
+            </div>
+            <h3>CSS3</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="90"></div>
+            </div>
+            <span class="skill-percentage">90%</span>
+          </div>
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <i class="fab fa-js-square"></i>
+            </div>
+            <h3>JavaScript</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="80"></div>
+            </div>
+            <span class="skill-percentage">80%</span>
+          </div>
+          
+          <div class="skill-card" data-category="frontend">
+            <div class="skill-icon">
+              <i class="fab fa-react"></i>
+            </div>
+            <h3>React</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="85"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          
+          <!-- Backend Skills -->
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <i class="fab fa-node-js"></i>
+            </div>
+            <h3>Node.js</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="65"></div>
+            </div>
+            <span class="skill-percentage">65%</span>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3>Python</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="70"></div>
+            </div>
+            <span class="skill-percentage">70%</span>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>MongoDB</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="60"></div>
+            </div>
+            <span class="skill-percentage">60%</span>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3>PostgreSQL</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="65"></div>
+            </div>
+            <span class="skill-percentage">65%</span>
+          </div>
+          
+          <div class="skill-card" data-category="backend">
+            <div class="skill-icon">
+              <i class="fab fa-java"></i>
+            </div>
+            <h3>Java</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="60"></div>
+            </div>
+            <span class="skill-percentage">60%</span>
+          </div>
+          
+          <!-- Tools -->
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <i class="fab fa-git-alt"></i>
+            </div>
+            <h3>Git</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="85"></div>
+            </div>
+            <span class="skill-percentage">85%</span>
+          </div>
+          
+          <div class="skill-card" data-category="tools">
+            <div class="skill-icon">
+              <i class="fab fa-docker"></i>
+            </div>
+            <h3>Docker</h3>
+            <div class="skill-level">
+              <div class="skill-bar" data-level="70"></div>
+            </div>
+            <span class="skill-percentage">70%</span>
+          </div>
+            
+        </div>
+      </div>
+    </section> 
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Projects</h2>
+          <p class="section-subtitle">Innovative solutions showcasing full-stack development expertise</p>
+        </div>
+        
+        <!-- Project Filter Tabs -->
+        <div class="project-filters">
+          <button class="filter-tab active" data-filter="all">All Projects</button>
+          <button class="filter-tab" data-filter="fullstack">Full-Stack</button>
+          <button class="filter-tab" data-filter="frontend">Frontend</button>
+          <button class="filter-tab" data-filter="backend">Backend</button>
+        </div>
+        
+        <div class="projects-grid" id="projects-container">
+          <!-- Loading state -->
+          <div id="projects-loading" class="projects-loading">
+            <div class="loading-spinner"></div>
+            <p>Loading projects...</p>
+          </div>
+          <!-- Project cards will be dynamically loaded here -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Let's Work Together</h2>
+          <p class="section-subtitle">Ready to collaborate? Let's discuss your next project!</p>
+        </div>
+        
+        <div class="contact-content">
+          <div class="contact-info">
+            <div class="contact-card">
+              <h3>Get In Touch</h3>
+              <p>
+                I'm always excited to connect with fellow developers, potential collaborators, and anyone interested 
+                in discussing technology and innovative projects. Whether you have an opportunity, want to collaborate, 
+                or just want to chat about web development, I'd love to hear from you.
+              </p>
+              
+              <div class="contact-methods">
+                <a href="mailto:ayenadistemesgen630@gmail.com" class="contact-method">
+                  <div class="method-icon">
+                    <i class="fas fa-envelope"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>Email</h4>
+                    <p>ayenadistemesgen630@gmail.com</p>
+                  </div>
+                </a>
+                
+                <a href="https://www.linkedin.com/in/ayenadis-temesgen-149b2b336" target="_blank" class="contact-method">
+                  <div class="method-icon">
+                    <i class="fab fa-linkedin"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>LinkedIn</h4>
+                    <p>Connect with me professionally</p>
+                  </div>
+                </a>
+                
+                <a href="https://github.com/ayni2421" target="_blank" class="contact-method">
+                  <div class="method-icon">
+                    <i class="fab fa-github"></i>
+                  </div>
+                  <div class="method-info">
+                    <h4>GitHub</h4>
+                    <p>Check out my code</p>
+                  </div>
+                </a>
+              </div>
+              
+              <div class="response-time">
+                <i class="fas fa-clock"></i>
+                <span>Usually responds within 24 hours via email</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="contact-form-container">
+            <!-- 
+              IMPORTANT: Replace 'your-form-id' below with your actual Formspree form ID.
+              To get your Formspree form ID:
+              1. Sign up at https://formspree.io
+              2. Create a new form
+              3. Copy the form ID from the form endpoint URL (e.g., 'xvgpwkza' from https://formspree.io/f/xvgpwkza)
+              4. Replace 'your-form-id' with your actual form ID
+            -->
+            <form id="contact-form" class="contact-form" action="https://formspree.io/f/xgooodvz" method="POST" novalidate>
+              <!-- Hidden field to customize thank you page -->
+              <input type="hidden" name="_next" value="https://ayenadis.dev/#contact">
+              <input type="hidden" name="_subject" value="New Portfolio Contact Form Submission">
+              
+              <div class="form-group">
+                <label for="name">Name *</label>
+                <input type="text" id="name" name="name" required aria-describedby="name-error">
+              </div>
+              
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required aria-describedby="email-error">
+              </div>
+              
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <select id="subject" name="subject">
+                  <option value="">Select a subject</option>
+                  <option value="freelance">Freelance Project</option>
+                  <option value="fulltime">Full-time Opportunity</option>
+                  <option value="collaboration">Collaboration</option>
+                  <option value="other">Other</option>
+                </select>
+              </div>
+              
+              <div class="form-group">
+                <label for="message">Message *</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project or opportunity..." aria-describedby="message-error"></textarea>
+              </div>
+              
+              <div class="form-group checkbox-group">
+                <label class="checkbox-label">
+                  <input type="checkbox" name="newsletter">
+                  <span class="checkmark"></span>
+                  Subscribe to my newsletter for updates
+                </label>
+              </div>
+              
+              <button type="submit" class="btn btn-primary submit-btn">
+                <span class="btn-text">Send Message</span>
+                <span class="btn-loading">
+                  <i class="fas fa-spinner fa-spin"></i>
+                  Sending...
+                </span>
+              </button>
+            </form>
+            
+            <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-info">
+          <div class="footer-brand">
+            <img src="images/logo.jpg" alt="Ayenadis Temesgen" class="footer-logo">
+            <span>Ayenadis Temesgen</span>
+          </div>
+          <p>Building the future, one line of code at a time.</p>
+          <div class="social-links">
+            <a href="https://github.com/ayni2421" target="_blank" aria-label="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/ayenadis-temesgen-149b2b336" target="_blank" aria-label="LinkedIn">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="mailto:ayenadistemesgen630@gmail.com" aria-label="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <div class="link-group">
+            <h4>Navigation</h4>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+          </div>
+          
+          <div class="link-group">
+            <h4>Resources</h4>
+            <a href="./resume-short.html" target="_blank">Resume</a>
+            <a href="https://github.com/ayni2421" target="_blank">GitHub</a>
+          </div>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 Ayenadis Temesgen. All rights reserved.</p>
+        <p>Built with ❤️ and modern web technologies</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button -->
+  <button id="scroll-to-top" class="scroll-to-top" aria-label="Scroll to top" style="display: none;">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
