@@ -706,7 +706,7 @@ class Portfolio {
             "description": "A comprehensive student service management system for De Montfort University, built with React.js, Node.js, Express, and PostgreSQL. It streamlines communication between students and administrative departments through a centralized platform for service requests, document management, and real-time notifications.",
             "image": "images/dmu-service.jpg",
             "github_link": "https://github.com/ayni2421/dmu-student-service",
-            "live_demo_link": "https://dmu-service-hub.netlify.app",
+            "live_demo_link": "https://dmu-service-hub.vercel.app",
             "technologies": ["React.js", "Node.js", "Express.js", "PostgreSQL", "Sequelize ORM", "Socket.io", "JWT Authentication", "Bootstrap", "Multer", "Nodemailer"],
             "status": "Completed"
           },
@@ -716,7 +716,7 @@ class Portfolio {
             "description": "A professional, full-stack todo list application built with React frontend and Node.js/Express backend, featuring PostgreSQL database persistence. Includes complete CRUD operations with both inline editing and modal interfaces, real-time updates, comprehensive error handling, input validation, and a modern responsive UI design with glassmorphism effects.",
             "image": "images/todo list.png",
             "github_link": "https://github.com/ayni2421/To-do-list",
-            "live_demo_link": "https://ayenadis-todo-app.netlify.app",
+            "live_demo_link": "https://todo-app-frontend-pwks.onrender.com",
             "technologies": ["React", "Node.js", "Express.js", "PostgreSQL", "JavaScript ES6+", "Bootstrap 5", "CSS3", "HTML5", "REST API", "CORS", "Environment Variables"],
             "status": "Completed"
           },
@@ -726,7 +726,7 @@ class Portfolio {
             "description": "A comprehensive full-stack web application designed for managing church community members, events, and communications. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, role-based access control (Admin/Moderator/Member), real-time messaging system, event management, and notification center. Built specifically for St. Mary Ethiopian Orthodox Tewahedo Church community with complete CRUD operations and secure authentication.",
             "image": "images/nablis-screenshot.png",
             "github_link": "https://github.com/ayni2421/nablis",
-            "live_demo_link": "https://nablis-church.herokuapp.com",
+            "live_demo_link": "https://nablis-church.vercel.app",
             "technologies": ["React.js 19", "Node.js", "Express.js 4", "PostgreSQL", "JWT Authentication", "Socket.io", "Bootstrap 5", "Axios", "bcryptjs", "React Router DOM", "React Toastify", "CORS", "UUID", "Multer", "Nodemailer", "Winston Logging", "Express Rate Limit"],
             "status": "Completed"
           }
