@@ -540,11 +540,11 @@ section[id] {
 
 .particle {
   position: absolute;
-  background: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
   backdrop-filter: blur(1px);
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
 }
 
 .particle-1 { width: 120px; height: 120px; top: 15%; left: 8%; animation-delay: 0s; }
@@ -934,8 +934,8 @@ section[id] {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 30% 70%, rgba(255, 154, 158, 0.3) 0%, transparent 50%),
-    radial-gradient(circle at 70% 30%, rgba(168, 237, 234, 0.3) 0%, transparent 50%);
+    radial-gradient(circle at 30% 70%, rgba(255, 154, 158, 0.15) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(168, 237, 234, 0.15) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1077,8 +1077,8 @@ section[id] {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1514,8 +1514,8 @@ section[id] {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.05) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.05) 0%, transparent 50%);
   pointer-events: none;
 }
 
