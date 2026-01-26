@@ -505,16 +505,30 @@ section[id] {
   position: relative;
   overflow: hidden;
   padding-top: 80px;
-  background: linear-gradient(135deg, 
-    #667eea 0%,
-    #764ba2 20%,
-    #f093fb 40%,
-    #f5576c 60%,
-    #4facfe 80%,
-    #00f2fe 100%
+  background: linear-gradient(-45deg, 
+    #ee7752, 
+    #e73c7e, 
+    #23a6d5, 
+    #23d5ab,
+    #667eea,
+    #764ba2
   );
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
   color: white;
   text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 .hero-particles {
@@ -526,10 +540,11 @@ section[id] {
 
 .particle {
   position: absolute;
-  background: rgba(255, 255, 255, 0.05);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
   animation: float 8s ease-in-out infinite;
   backdrop-filter: blur(1px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
 .particle-1 { width: 120px; height: 120px; top: 15%; left: 8%; animation-delay: 0s; }
@@ -624,7 +639,7 @@ section[id] {
 }
 
 .hero-name {
-  font-size: clamp(2.5rem, 6vw, 4.5rem);
+  font-size: clamp(2rem, 5vw, 3.5rem);
   font-weight: 900;
   line-height: 1.1;
   margin-bottom: var(--space-md);
@@ -899,13 +914,15 @@ section[id] {
 /* About Section */
 .about {
   padding: var(--space-3xl) 0;
-  background: linear-gradient(135deg, 
-    rgba(102, 126, 234, 0.1) 0%, 
-    rgba(118, 75, 162, 0.08) 25%,
-    rgba(240, 147, 251, 0.1) 50%,
-    rgba(245, 87, 108, 0.08) 75%,
-    rgba(79, 172, 254, 0.1) 100%
+  background: linear-gradient(45deg, 
+    #ff9a9e 0%, 
+    #fecfef 25%, 
+    #fecfef 50%, 
+    #ff9a9e 75%, 
+    #a8edea 100%
   );
+  background-size: 300% 300%;
+  animation: gradientShift 20s ease infinite;
   position: relative;
 }
 
@@ -916,7 +933,9 @@ section[id] {
   left: 0;
   right: 0;
   bottom: 0;
-  background: radial-gradient(circle at 30% 70%, rgba(102, 126, 234, 0.15) 0%, transparent 50%);
+  background: 
+    radial-gradient(circle at 30% 70%, rgba(255, 154, 158, 0.3) 0%, transparent 50%),
+    radial-gradient(circle at 70% 30%, rgba(168, 237, 234, 0.3) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1039,13 +1058,14 @@ section[id] {
 .skills {
   padding: var(--space-3xl) 0;
   background: linear-gradient(135deg, 
-    rgba(118, 75, 162, 0.12) 0%, 
-    rgba(240, 147, 251, 0.1) 20%,
-    rgba(245, 87, 108, 0.08) 40%,
-    rgba(79, 172, 254, 0.1) 60%,
-    rgba(102, 126, 234, 0.12) 80%,
-    rgba(0, 242, 254, 0.1) 100%
+    #667eea 0%, 
+    #764ba2 25%, 
+    #f093fb 50%, 
+    #f5576c 75%, 
+    #4facfe 100%
   );
+  background-size: 400% 400%;
+  animation: gradientShift 25s ease infinite;
   position: relative;
 }
 
@@ -1057,8 +1077,8 @@ section[id] {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 80% 20%, rgba(240, 147, 251, 0.2) 0%, transparent 50%),
-    radial-gradient(circle at 20% 80%, rgba(79, 172, 254, 0.2) 0%, transparent 50%);
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
@@ -1164,17 +1184,15 @@ section[id] {
 /* Projects Section - Refined & Professional */
 .projects {
   padding: var(--space-3xl) 0;
-  background: 
-    radial-gradient(circle at 25% 25%, rgba(102, 126, 234, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 75% 75%, rgba(118, 75, 162, 0.12) 0%, transparent 50%),
-    radial-gradient(circle at 50% 10%, rgba(240, 147, 251, 0.1) 0%, transparent 50%),
-    linear-gradient(135deg, 
-      rgba(240, 147, 251, 0.08) 0%, 
-      rgba(245, 87, 108, 0.06) 25%,
-      rgba(79, 172, 254, 0.08) 50%,
-      rgba(0, 242, 254, 0.06) 75%,
-      rgba(102, 126, 234, 0.08) 100%
-    );
+  background: linear-gradient(45deg, 
+    #fa709a 0%, 
+    #fee140 25%, 
+    #fa709a 50%, 
+    #fee140 75%, 
+    #fa709a 100%
+  );
+  background-size: 300% 300%;
+  animation: gradientShift 18s ease infinite;
   position: relative;
   overflow: hidden;
 }
@@ -1477,14 +1495,14 @@ section[id] {
 /* Contact Section - Enhanced with better visual appeal */
 .contact {
   padding: var(--space-3xl) 0;
-  background: linear-gradient(135deg, 
-    rgba(79, 172, 254, 0.12) 0%, 
-    rgba(102, 126, 234, 0.1) 20%,
-    rgba(118, 75, 162, 0.08) 40%,
-    rgba(240, 147, 251, 0.1) 60%,
-    rgba(245, 87, 108, 0.12) 80%,
-    rgba(0, 242, 254, 0.1) 100%
+  background: linear-gradient(-45deg, 
+    #667eea, 
+    #764ba2, 
+    #f093fb, 
+    #f5576c
   );
+  background-size: 400% 400%;
+  animation: gradientShift 22s ease infinite;
   position: relative;
 }
 
@@ -1496,8 +1514,8 @@ section[id] {
   right: 0;
   bottom: 0;
   background: 
-    radial-gradient(circle at 20% 80%, rgba(124, 58, 237, 0.15) 0%, transparent 50%),
-    radial-gradient(circle at 80% 20%, rgba(245, 87, 108, 0.15) 0%, transparent 50%);
+    radial-gradient(circle at 20% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
+    radial-gradient(circle at 80% 20%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
   pointer-events: none;
 }
 
