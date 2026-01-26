@@ -506,13 +506,14 @@ section[id] {
   overflow: hidden;
   padding-top: 80px;
   background: linear-gradient(135deg, 
-    #0f0f23 0%,
-    #1a1a2e 25%,
-    #16213e 50%,
-    #0f3460 75%,
-    #533483 100%
+    #667eea 0%,
+    #764ba2 25%,
+    #f093fb 50%,
+    #f5576c 75%,
+    #4facfe 100%
   );
   color: white;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero-particles {
@@ -657,6 +658,8 @@ section[id] {
   margin-bottom: var(--space-xl);
   opacity: 0.95;
   max-width: 600px;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  color: rgba(255, 255, 255, 0.95);
 }
 
 .hero-stats {
