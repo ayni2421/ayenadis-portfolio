@@ -136,10 +136,33 @@
                 margin-bottom: 15px; 
                 border-bottom: 1px solid #ccc;
             }
-            .print-btn, .back-btn { display: none; }
+            .no-print,
+            .print-btn, 
+            .back-btn { 
+                display: none !important; 
+                visibility: hidden !important;
+                opacity: 0 !important;
+                position: absolute !important;
+                left: -9999px !important;
+                top: -9999px !important;
+                width: 0 !important;
+                height: 0 !important;
+                overflow: hidden !important;
+            }
             .project {
                 background: white;
                 border-left: 2px solid #6366f1;
+            }
+            /* Ensure no fixed positioning elements appear */
+            * {
+                position: static !important;
+            }
+            .header, .section, .summary, .skills, .project {
+                position: static !important;
+            }
+            /* Hide any buttons or interactive elements */
+            button, .btn, a[class*="btn"] {
+                display: none !important;
             }
         }
         
@@ -163,10 +186,28 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-btn">
+    <script>
+        function handlePrint() {
+            // Hide buttons before printing
+            document.querySelectorAll('.no-print').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Print
+            window.print();
+            
+            // Show buttons again after printing (in case user cancels)
+            setTimeout(() => {
+                document.querySelectorAll('.no-print').forEach(el => {
+                    el.style.display = '';
+                });
+            }, 1000);
+        }
+    </script>
+    <a href="index.html" class="back-btn no-print">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
     </a>
-    <button class="print-btn" onclick="window.print()">
+    <button class="print-btn no-print" onclick="handlePrint()">
         <i class="fas fa-print"></i> Print / Save as PDF
     </button>
     
@@ -183,7 +224,7 @@
     <div class="section">
         <div class="section-title">Summary</div>
         <div class="summary">
-            Dedicated Software Engineering student with 2+ years of hands-on experience in full-stack web development. 
+            Dedicated Software Engineering student with 2+ years of learning experience in full-stack web development. 
             Specialized in building scalable web applications using React.js, Node.js, and PostgreSQL. 
             Proven track record of delivering complete projects from concept to deployment, including university management systems and community platforms.
         </div>
@@ -217,16 +258,16 @@
         <div class="project">
             <div class="project-header">
                 <div class="project-title">DMU Service Hub - University Management System</div>
-                <div class="project-date">2024</div>
+                <div class="project-date">2025</div>
             </div>
             <div class="project-tech">React.js, Node.js, Express.js, PostgreSQL, Socket.io, JWT Authentication</div>
-            <div class="project-desc">Comprehensive student service management system for De Montfort University. Features real-time notifications, document management, and administrative dashboard with complete CRUD operations.</div>
+            <div class="project-desc">Comprehensive student service management system for Debre Markos University. Features real-time notifications, document management, and administrative dashboard with complete CRUD operations.</div>
         </div>
 
         <div class="project">
             <div class="project-header">
                 <div class="project-title">Full-Stack Todo List Application</div>
-                <div class="project-date">2024</div>
+                <div class="project-date">2025</div>
             </div>
             <div class="project-tech">React, Node.js, Express.js, PostgreSQL, REST API, Bootstrap 5</div>
             <div class="project-desc">Professional todo application with React frontend and Node.js backend. Includes CRUD operations, real-time updates, input validation, and modern glassmorphism UI design.</div>
@@ -235,7 +276,7 @@
         <div class="project">
             <div class="project-header">
                 <div class="project-title">Nablis - Ethiopian Orthodox Church Management System</div>
-                <div class="project-date">2024</div>
+                <div class="project-date">2025</div>
             </div>
             <div class="project-tech">React.js 19, Node.js, Express.js 4, PostgreSQL, Socket.io, Winston Logging</div>
             <div class="project-desc">Full-stack web application for St. Mary Ethiopian Orthodox Tewahedo Church. Features multi-step registration with Ethiopian/Amharic labels, role-based access control, real-time messaging, and event management.</div>
@@ -246,8 +287,8 @@
         <div class="section-title">Education & Additional</div>
         <div class="summary">
             <strong>Education:</strong> Bachelor of Software Engineering, Debre Markos University (Expected 2026)<br>
-            <strong>Experience:</strong> 2+ years of hands-on full-stack development<br>
-            <strong>Languages:</strong> English (Fluent), Amharic (Native)<br>
+            <strong>Experience:</strong> 2+ years of learning experience in full-stack development<br>
+            <strong>Languages:</strong> English, Amharic (Native)<br>
             <strong>Specializations:</strong> Full-Stack Web Development, Database Design, Real-time Applications<br>
             <strong>Status:</strong> Seeking software engineering opportunities and internships
         </div>

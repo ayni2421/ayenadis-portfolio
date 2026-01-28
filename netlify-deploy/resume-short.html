@@ -100,9 +100,37 @@
         }
         
         @media print {
-            body { padding: 10px; font-size: 11px; }
-            .section { margin-bottom: 12px; }
-            .print-btn, .back-btn { display: none; }
+            body { 
+                padding: 10px; 
+                font-size: 11px; 
+            }
+            .section { 
+                margin-bottom: 12px; 
+            }
+            .no-print,
+            .print-btn, 
+            .back-btn { 
+                display: none !important; 
+                visibility: hidden !important;
+                opacity: 0 !important;
+                position: absolute !important;
+                left: -9999px !important;
+                top: -9999px !important;
+                width: 0 !important;
+                height: 0 !important;
+                overflow: hidden !important;
+            }
+            /* Ensure no fixed positioning elements appear */
+            * {
+                position: static !important;
+            }
+            .header, .section, .summary {
+                position: static !important;
+            }
+            /* Hide any buttons or interactive elements */
+            button, .btn, a[class*="btn"] {
+                display: none !important;
+            }
         }
         
         @media (max-width: 768px) {
@@ -120,10 +148,28 @@
     </style>
 </head>
 <body>
-    <a href="index.html" class="back-btn">
+    <script>
+        function handlePrint() {
+            // Hide buttons before printing
+            document.querySelectorAll('.no-print').forEach(el => {
+                el.style.display = 'none';
+            });
+            
+            // Print
+            window.print();
+            
+            // Show buttons again after printing (in case user cancels)
+            setTimeout(() => {
+                document.querySelectorAll('.no-print').forEach(el => {
+                    el.style.display = '';
+                });
+            }, 1000);
+        }
+    </script>
+    <a href="index.html" class="back-btn no-print">
         <i class="fas fa-arrow-left"></i> Back to Portfolio
     </a>
-    <button class="print-btn" onclick="window.print()">
+    <button class="print-btn no-print" onclick="handlePrint()">
         <i class="fas fa-print"></i> Print / Save as PDF
     </button>
     

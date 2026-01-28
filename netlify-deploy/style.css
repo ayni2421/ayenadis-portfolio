@@ -840,14 +840,17 @@ section[id] {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  border: 5px solid rgba(255, 255, 255, 0.3);
-  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+  object-position: center center;
+  border: 3px solid rgba(255, 255, 255, 0.9);
+  box-shadow: none;
   transition: all 0.3s ease;
+  opacity: 1;
+  background: transparent;
 }
 
 .profile-img:hover {
   transform: scale(1.05);
-  box-shadow: 0 25px 70px rgba(0, 0, 0, 0.4);
+  box-shadow: none;
 }
 
 .status-badge {
