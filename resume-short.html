@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Ayenadis Temesgen - Software Engineering Student Resume">
     <meta name="author" content="Ayenadis Temesgen">
-    <title>Ayenadis Temesgen - Resume</title>
+    <title>Resume</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -163,6 +163,16 @@
             /* Hide any buttons or interactive elements */
             button, .btn, a[class*="btn"] {
                 display: none !important;
+            }
+            /* Hide browser print headers and footers */
+            @page {
+                margin: 0.5in;
+                size: A4;
+            }
+            html, body {
+                -webkit-print-color-adjust: exact !important;
+                color-adjust: exact !important;
+                print-color-adjust: exact !important;
             }
         }
         
