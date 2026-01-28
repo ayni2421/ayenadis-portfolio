@@ -1,8 +1,8 @@
 [
   {
     "id": "dmu-service-hub",
-    "title": "DMU Service Hub",
-    "description": "A comprehensive student service management system for De Montfort University, built with React.js, Node.js, Express, and PostgreSQL. It streamlines communication between students and administrative departments through a centralized platform for service requests, document management, and real-time notifications.",
+    "title": "University Online Student Service Center",
+    "description": "A comprehensive student service management system for universities, built with React.js, Node.js, Express, and PostgreSQL. It streamlines communication between students and administrative departments through a centralized platform for service requests, document management, and real-time notifications.",
     "image": "images/dmu-service.jpg",
     "github_link": "https://github.com/ayni2421/dmu-student-service",
     "live_demo_link": "https://dmu-service-hub.vercel.app",
@@ -21,8 +21,8 @@
   },
   {
     "id": "church-website",
-    "title": "Nablis - St. Mary Ethiopian Orthodox Tewahedo Church Management System",
-    "description": "A comprehensive full-stack web application designed for managing church community members, events, and communications. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, role-based access control (Admin/Moderator/Member), real-time messaging system, event management, and notification center. Built specifically for St. Mary Ethiopian Orthodox Tewahedo Church community with complete CRUD operations and secure authentication.",
+    "title": "Church Management System",
+    "description": "A comprehensive full-stack web application designed for managing church community members, events, and communications. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, role-based access control (Admin/Moderator/Member), real-time messaging system, event management, and notification center. Built specifically for Ethiopian Orthodox Tewahedo Church community with complete CRUD operations and secure authentication.",
     "image": "images/nablis-screenshot.png",
     "github_link": "https://github.com/ayni2421/nablis",
     "live_demo_link": "https://nablis-church.vercel.app",
