@@ -21,12 +21,12 @@
   },
   {
     "id": "church-website",
-    "title": "Nablis - Church Community Platform",
-    "description": "A comprehensive full-stack web application designed for managing church community members, events, and communications. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, role-based access control (Admin/Moderator/Member), real-time messaging system, event management, and notification center. Built specifically for Ethiopian Orthodox Tewahedo Church community with complete CRUD operations and secure authentication.",
+    "title": "Church Management System",
+    "description": "A web-based platform for congregation members to register, receive daily spiritual teachings, announcements, and church news. Supports real-time messaging, role-based access, and comprehensive church community management. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, event management, and notification center built specifically for Ethiopian Orthodox Tewahedo Church community.",
     "image": "images/nablis-screenshot.png",
     "github_link": "https://github.com/ayni2421/nablis",
     "live_demo_link": "https://nablis-church.vercel.app",
     "technologies": ["React.js 19", "Node.js", "Express.js 4", "PostgreSQL", "JWT Authentication", "Socket.io", "Bootstrap 5", "Axios", "bcryptjs", "React Router DOM", "React Toastify", "CORS", "UUID", "Multer", "Nodemailer", "Winston Logging", "Express Rate Limit"],
-    "status": "Completed"
+    "status": "In Progress"
   }
 ]
