@@ -691,7 +691,7 @@ class Portfolio {
       
       // Try to fetch from projects.json first
       try {
-        const response = await fetch('projects.json');
+        const response = await fetch('projects.json?v=' + Date.now());
         if (!response.ok) {
           throw new Error(`Failed to fetch projects: ${response.statusText}`);
         }
@@ -864,7 +864,7 @@ class Portfolio {
       
       // Try to fetch from projects.json first
       try {
-        const response = await fetch('projects.json');
+        const response = await fetch('projects.json?v=' + Date.now());
         if (!response.ok) throw new Error(`Failed to fetch projects: ${response.statusText}`);
         projects = await response.json();
       } catch (fetchError) {
