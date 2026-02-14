@@ -11,32 +11,87 @@
         * { margin: 0; padding: 0; box-sizing: border-box; }
         
         body {
-            font-family: 'Segoe UI', sans-serif;
-            line-height: 1.5;
-            color: #333;
+            font-family: 'Inter', 'Segoe UI', sans-serif;
+            line-height: 1.6;
+            color: #2d3748;
             font-size: 15px;
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             padding: 20px;
+            background: #f3f4f6;
+        }
+        
+        .resume-container {
             background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            padding: 40px;
+            margin: 20px 0;
         }
         
         .header {
             text-align: center;
-            margin-bottom: 30px;
-            border-bottom: 3px solid #6366f1;
-            padding-bottom: 20px;
+            margin-bottom: 35px;
+            padding-bottom: 25px;
+            border-bottom: 3px solid #2563eb;
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            margin: -40px -40px 35px -40px;
         }
         
-        .name { font-size: 28px; font-weight: 700; color: #1a202c; margin-bottom: 5px; }
-        .title { font-size: 16px; color: #6366f1; font-weight: 600; margin: 8px 0; }
-        .contact { font-size: 13px; margin-top: 10px; line-height: 1.6; }
-        .contact a { color: #6366f1; text-decoration: none; font-weight: 500; }
+        .name { 
+            font-size: 36px; 
+            font-weight: 800; 
+            color: #1e293b; 
+            margin-bottom: 8px;
+            letter-spacing: 0.5px;
+        }
+        .title { 
+            font-size: 18px; 
+            color: #2563eb; 
+            font-weight: 600; 
+            margin: 10px 0 20px 0;
+            letter-spacing: 0.3px;
+        }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+            text-align: left;
+        }
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 15px;
+            background: #f8fafc;
+            border-radius: 8px;
+            border-left: 3px solid #2563eb;
+            font-size: 13px;
+            color: #475569;
+        }
+        .contact-item i {
+            color: #2563eb;
+            font-size: 16px;
+            width: 20px;
+            text-align: center;
+        }
+        .contact-item a { 
+            color: #2563eb; 
+            text-decoration: none; 
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        .contact-item a:hover {
+            color: #1d4ed8;
+        }
         
         .section { 
-            margin-bottom: 25px; 
-            padding-bottom: 20px;
-            border-bottom: 1px solid #e2e8f0;
+            margin-bottom: 30px; 
+            padding-bottom: 25px;
+            border-bottom: 2px solid #e5e7eb;
         }
         
         .section:last-child {
@@ -44,45 +99,122 @@
         }
         
         .section-title {
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 700;
-            color: #1a202c;
+            color: #2563eb;
             text-transform: uppercase;
-            border-bottom: 2px solid #6366f1;
-            padding-bottom: 5px;
-            margin-bottom: 15px;
-            letter-spacing: 0.5px;
+            padding-bottom: 8px;
+            margin-bottom: 18px;
+            letter-spacing: 1px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
         }
         
-        .summary { font-size: 14px; line-height: 1.6; color: #4a5568; }
+        .section-title::before {
+            content: '';
+            width: 4px;
+            height: 24px;
+            background: #2563eb;
+            border-radius: 2px;
+        }
         
-        .skills { display: flex; gap: 25px; flex-wrap: wrap; }
-        .skill-group { flex: 1; min-width: 180px; }
+        .summary { 
+            font-size: 14px; 
+            line-height: 1.8; 
+            color: #4b5563;
+            background: #f9fafb;
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 4px solid #2563eb;
+        }
+        
+        .skills { 
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+        }
+        .skill-group { 
+            background: #f9fafb;
+            padding: 15px;
+            border-radius: 8px;
+            border-top: 3px solid #2563eb;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .skill-group:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+        }
         .skill-group h4 { 
             font-size: 14px; 
-            font-weight: 600; 
-            margin-bottom: 8px; 
-            color: #6366f1;
+            font-weight: 700; 
+            margin-bottom: 10px; 
+            color: #2563eb;
+            display: flex;
+            align-items: center;
+            gap: 8px;
         }
-        .skill-group div { font-size: 13px; color: #4a5568; line-height: 1.5; }
+        .skill-group h4::before {
+            content: '▸';
+            color: #1d4ed8;
+            font-weight: bold;
+        }
+        .skill-group div { 
+            font-size: 13px; 
+            color: #6b7280; 
+            line-height: 1.6;
+        }
         
         .project { 
-            margin-bottom: 18px; 
-            padding: 15px;
-            border-left: 4px solid #6366f1;
-            background: #f8f9ff;
-            border-radius: 5px;
+            margin-bottom: 20px; 
+            padding: 20px;
+            border-left: 5px solid #2563eb;
+            background: linear-gradient(135deg, #f9fafb 0%, #ffffff 100%);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
-        .project-header { display: flex; justify-content: space-between; margin-bottom: 8px; align-items: center; }
-        .project-title { font-weight: 600; font-size: 14px; color: #1a202c; }
-        .project-date { font-size: 12px; color: #718096; font-weight: 500; }
-        .project-tech { 
+        .project:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 16px rgba(37, 99, 235, 0.15);
+        }
+        .project-header { 
+            display: flex; 
+            justify-content: space-between; 
+            margin-bottom: 10px; 
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .project-title { 
+            font-weight: 700; 
+            font-size: 15px; 
+            color: #1f2937;
+            flex: 1;
+        }
+        .project-date { 
             font-size: 12px; 
-            color: #805ad5; 
-            font-weight: 600; 
-            margin-bottom: 8px;
+            color: white;
+            background: #2563eb;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-weight: 600;
         }
-        .project-desc { font-size: 13px; color: #4a5568; line-height: 1.5; }
+        .project-tech { 
+            font-size: 11px; 
+            color: #7c3aed; 
+            font-weight: 600; 
+            margin-bottom: 10px;
+            background: #f3e8ff;
+            padding: 8px 12px;
+            border-radius: 6px;
+            display: inline-block;
+        }
+        .project-desc { 
+            font-size: 13px; 
+            color: #4b5563; 
+            line-height: 1.7;
+        }
         
         .print-btn {
             position: fixed;
@@ -130,7 +262,41 @@
         @media print {
             body { 
                 padding: 15px; 
-                font-size: 12px; 
+                font-size: 12px;
+                background: white;
+            }
+            .resume-container {
+                box-shadow: none;
+                padding: 20px;
+            }
+            .header {
+                background: white;
+                color: #1f2937;
+                margin: 0 0 20px 0;
+                padding: 20px;
+                border-bottom: 3px solid #2563eb;
+            }
+            .name {
+                color: #1f2937;
+            }
+            .title {
+                color: #2563eb;
+            }
+            .contact-grid {
+                display: block;
+            }
+            .contact-item {
+                display: inline-block;
+                margin: 5px 10px 5px 0;
+                background: white;
+                border-left: 2px solid #2563eb;
+                padding: 5px 10px;
+            }
+            .contact-item i {
+                color: #2563eb;
+            }
+            .contact-item a {
+                color: #2563eb;
             }
             .section { 
                 margin-bottom: 15px; 
@@ -151,7 +317,12 @@
             }
             .project {
                 background: white;
-                border-left: 2px solid #6366f1;
+                border-left: 3px solid #2563eb;
+                box-shadow: none;
+            }
+            .skill-group {
+                background: white;
+                box-shadow: none;
             }
             /* Ensure no fixed positioning elements appear */
             * {
@@ -220,22 +391,38 @@
         <i class="fas fa-print"></i> Print / Save as PDF
     </button>
     
+    <div class="resume-container">
     <div class="header">
         <div class="name">AYENADIS TEMESGEN</div>
-        <div class="title">Software Engineering Student</div>
-        <div class="contact">
-            📧 ayenadistemesgen630@gmail.com • 📍 Debre Markos, Ethiopia • 
-            💼 <a href="https://www.linkedin.com/in/ayenadis-temesgen-149b2b336">LinkedIn</a> • 
-            🔗 <a href="https://github.com/ayni2421">GitHub</a>
+        <div class="title">Software Engineering Student | Full-Stack Developer</div>
+        <div class="contact-grid">
+            <div class="contact-item">
+                <i class="fas fa-envelope"></i>
+                <a href="mailto:ayenadistemesgen630@gmail.com">ayenadistemesgen630@gmail.com</a>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-phone"></i>
+                <span>+251 964 697 403 / +251 923 845 804</span>
+            </div>
+            <div class="contact-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Debre Markos, Ethiopia</span>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-linkedin"></i>
+                <a href="https://www.linkedin.com/in/ayenadis-temesgen-149b2b336" target="_blank">LinkedIn Profile</a>
+            </div>
+            <div class="contact-item">
+                <i class="fab fa-github"></i>
+                <a href="https://github.com/ayni2421" target="_blank">GitHub Profile</a>
+            </div>
         </div>
     </div>
 
     <div class="section">
         <div class="section-title">Summary</div>
         <div class="summary">
-            Dedicated Software Engineering student with 2+ years of learning experience in full-stack web development. 
-            Specialized in building scalable web applications using React.js, Node.js, and PostgreSQL. 
-            Proven track record of delivering complete projects from concept to deployment, including university online student service centers and community platforms.
+            4th-year Software Engineering student with a 3.73 CGPA and 2+ years of experience in full-stack web development. Proficient in building scalable web applications using React.js, Node.js, and PostgreSQL. Successfully delivered multiple projects from concept to deployment, including university service platforms and community management systems. Seeking opportunities to contribute technical skills and passion for problem-solving to innovative software engineering teams.
         </div>
     </div>
 
@@ -270,7 +457,7 @@
                 <div class="project-date">2025</div>
             </div>
             <div class="project-tech">React.js, Node.js, Express.js, PostgreSQL, Socket.io, JWT Authentication</div>
-            <div class="project-desc">Comprehensive student service management system for universities. Features real-time notifications, document management, and administrative dashboard with complete CRUD operations.</div>
+            <div class="project-desc">Engineered a comprehensive student service management platform streamlining communication between students and administrative departments. Implemented real-time notifications using Socket.io, secure document management with Multer, and role-based authentication. Features complete CRUD operations and administrative dashboard for efficient service request handling.</div>
         </div>
 
         <div class="project">
@@ -279,7 +466,7 @@
                 <div class="project-date">2025</div>
             </div>
             <div class="project-tech">React, Node.js, Express.js, PostgreSQL, REST API, Bootstrap 5</div>
-            <div class="project-desc">Professional todo application with React frontend and Node.js backend. Includes CRUD operations, real-time updates, input validation, and modern glassmorphism UI design.</div>
+            <div class="project-desc">Developed a production-grade task management application with React frontend and Node.js backend. Architected RESTful API with PostgreSQL database persistence, implementing comprehensive error handling, input validation, and real-time updates. Designed modern glassmorphism UI with responsive Bootstrap 5 framework for optimal user experience across devices.</div>
         </div>
 
         <div class="project">
@@ -288,7 +475,7 @@
                 <div class="project-date">2025 (In Progress)</div>
             </div>
             <div class="project-tech">React.js 19, Node.js, Express.js 4, PostgreSQL, Socket.io, Winston Logging</div>
-            <div class="project-desc">A web-based platform for congregation members to register, receive daily spiritual teachings, announcements, and church news. Supports real-time messaging, role-based access, and comprehensive church community management with Ethiopian/Amharic labels.</div>
+            <div class="project-desc">Building a comprehensive web platform for Ethiopian Orthodox Tewahedo Church community management. Developing features for member registration, daily spiritual teachings distribution, real-time announcements, and event management. Implementing multi-step registration with bilingual (English/Amharic) support, role-based access control, and real-time messaging system using Socket.io for enhanced community engagement.</div>
         </div>
     </div>
 
@@ -302,6 +489,7 @@
             <strong>Specializations:</strong> Full-Stack Web Development, Database Design, Real-time Applications<br>
             <strong>Status:</strong> Seeking software engineering opportunities and internships
         </div>
+    </div>
     </div>
 </body>
 </html>
