@@ -21,7 +21,7 @@
   },
   {
     "id": "church-website",
-    "title": "Church Management System",
+    "title": "Church Community Platform",
     "description": "A web-based platform for congregation members to register, receive daily spiritual teachings, announcements, and church news. Supports real-time messaging, role-based access, and comprehensive church community management. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, event management, and notification center built specifically for Ethiopian Orthodox Tewahedo Church community.",
     "image": "images/nablis-screenshot.png",
     "github_link": "https://github.com/ayni2421/nablis",

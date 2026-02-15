@@ -722,7 +722,7 @@ class Portfolio {
           },
           {
             "id": "church-website",
-            "title": "Nablis - St. Mary Ethiopian Orthodox Tewahedo Church Management System",
+            "title": "Nablis - St. Mary Ethiopian Orthodox Tewahedo Church Community Platform",
             "description": "A comprehensive full-stack web application designed for managing church community members, events, and communications. Features include multi-step member registration with Ethiopian/Amharic labels, admin dashboard with user statistics, role-based access control (Admin/Moderator/Member), real-time messaging system, event management, and notification center. Built specifically for St. Mary Ethiopian Orthodox Tewahedo Church community with complete CRUD operations and secure authentication.",
             "image": "images/nablis-screenshot.png",
             "github_link": "https://github.com/ayni2421/nablis",
