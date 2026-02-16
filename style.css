@@ -1005,7 +1005,7 @@ section[id] {
   height: 100%;
   border-radius: 50%;
   object-fit: cover;
-  object-position: center center;
+  object-position: center top;
   border: 3px solid rgba(255, 255, 255, 0.9);
   box-shadow: none;
   opacity: 1;
