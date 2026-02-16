@@ -2204,7 +2204,7 @@ section[id] {
 @media (max-width: 768px) {
   .hero {
     min-height: 100vh;
-    padding: var(--space-xl) 0;
+    padding: 100px 0 var(--space-xl);
   }
   
   .hero-name {

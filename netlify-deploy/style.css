@@ -1919,7 +1919,7 @@ section[id] {
 @media (max-width: 768px) {
   .hero {
     min-height: auto;
-    padding: var(--space-2xl) 0;
+    padding: 100px 0 var(--space-2xl);
   }
   
   .hero-name {
