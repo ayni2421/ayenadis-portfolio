@@ -2013,6 +2013,10 @@ section[id] {
 }
 
 @media (max-width: 768px) {
+  .nav-container {
+    padding: var(--space-sm) var(--space-sm);
+  }
+  
   .nav-menu {
     position: fixed;
     top: 100%;
